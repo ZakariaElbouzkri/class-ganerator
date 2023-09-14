@@ -28,9 +28,7 @@ clean:
 	$(RM) $(OBJ)\n
 fclean: clean
 	$(RM) $(NAME)\n
-re: fclean all
-"""
-
+re: fclean all"""
 
 # className.cpp template
 
@@ -51,8 +49,7 @@ cppFile = f"""#include "{className}.hpp"\n\n
 	if (this != &rhs){{\n
 	}}
 	return (*this);
-}}\n
-"""
+}}"""
 
 # className.hpp template
 
@@ -67,15 +64,13 @@ class	{className}{{\n
 		{className}( {className} const& rhs );
 		{className}&	operator=( const {className}& rhs );
 }};\n
-#endif
-"""
+#endif"""
 
 mainFile = f"""#include "{className}.hpp"\n\n
 int	main(){{
 	std::cout << "hello world\\n";
 	return (0);
-}}\n
-"""
+}}"""
 
 wrieTemp(Makefile, "Makefile")
 wrieTemp(mainFile, "main.cpp")

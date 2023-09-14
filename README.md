@@ -21,6 +21,8 @@ This Python script is designed to generate C++ class files in the Orthodox Canon
     alias genClass="python3 /path/to/scripy.py"
     or
     export="$PATH:/path/to/scripy.py"
+    or
+    alias genClass="python3 ~/class-generator/script.py"' >> .zshrc
 
 ## Examples:
         genClass Person

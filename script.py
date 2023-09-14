@@ -34,18 +34,17 @@ re: fclean all"""
 
 cppFile = f"""#include "{className}.hpp"\n\n
 {className}::{className}( void ){{
-	std::cout << "default constructor called\\n";
+	std::cout << "Default constructor called\\n";
 }}\n
 {className}::~{className}( void ){{
-	std::cout << "destructor called\\n";
+	std::cout << "Destructor called\\n";
 }}\n
 {className}::{className}( {className} const& rhs ){{
-	std::cout << "the copy constructor called\\n";
-	if (this != &rhs){{\n
-	}}
+	std::cout << "Copy constructor called\\n";
+	*this = rhs;
 }}\n
 {className}&	{className}::operator=( const {className}& rhs ){{
-	std::cout << "the copy asignment operator overload called\\n";
+	std::cout << "Copy assignment operator called\\n";
 	if (this != &rhs){{\n
 	}}
 	return (*this);

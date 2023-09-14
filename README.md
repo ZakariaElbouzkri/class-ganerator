@@ -18,7 +18,10 @@ This Python script is designed to generate C++ class files in the Orthodox Canon
 
 3. install for macOS:
     ```bash
-    echo 'alias genClass="python3 ~/class-generator/script.py"' >> .zshrc
+    in zsh:
+    echo 'alias genClass="python3 ~/class-generator/script.py"' >> ~/.zshrc
+    or in bash:
+    echo 'alias genClass="python3 ~/class-generator/script.py"' >> ~/.bashrc
 
 ## Examples:
         genClass Person

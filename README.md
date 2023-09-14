@@ -14,15 +14,15 @@ This Python script is designed to generate C++ class files in the Orthodox Canon
 
 2. Navigate to the project directory:
     ```bash
-    cd class-generator```
+    cd class-generator
 
 3. install for macOS:
     ```bash
     alias genClass="python3 /path/to/scripy.py"
     or
     export="$PATH:/path/to/scripy.py"
+
 ## Examples:
-    ```bash
         genClass Person
     
 - this comand will generate the following files with orthodox-canonial form

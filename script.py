@@ -1,10 +1,13 @@
 
 import sys
+import os
 
 def	createTemplate(temp, fileName):
-	with open(fileName, 'w') as f:
-		print(temp, file=f)
-		f.close()
+    if os.access(fileName, os.F_OK):
+        return
+    with open(fileName, 'w') as f:
+        print(temp, file=f)
+        f.close()
 
 if (len(sys.argv) < 2):
 	print("Pass cls as args", file=sys.stderr)
@@ -89,6 +92,5 @@ fclean: clean
 	$(RM) $(NAME)\n
 re: fclean all"""
 
-# print(Makefile)
 createTemplate(Makefile, "Makefile")
 createTemplate(mainFile, "main.cpp")

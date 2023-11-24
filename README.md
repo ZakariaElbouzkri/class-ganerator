@@ -10,7 +10,7 @@ This Python script is designed to generate C++ class files in the Orthodox Canon
 1. Clone this repository to your local machine or download the script:
    
    ```bash
-   git clone [https://github.com/yourusername/class-generator.git](https://github.com/ZakariaElbouzkri/class-ganerator.git)
+   git clone https://github.com/ZakariaElbouzkri/class-ganerator.git
 
 2. Navigate to the project directory:
     ```bash
